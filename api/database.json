@@ -1,0 +1,266 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullName": "John Doe",
+      "email": "john.doe@example.com",
+      "isAdmin": true
+    },
+    {
+      "id": 2,
+      "fullName": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "isAdmin": true
+    },
+    {
+      "id": 3,
+      "fullName": "Bob Johnson",
+      "email": "bob.johnson@example.com",
+      "isAdmin": false
+    },
+    {
+      "id": 4,
+      "fullName": "Alice Williams",
+      "email": "alice.williams@example.com",
+      "isAdmin": false
+    },
+    {
+      "id": 5,
+      "fullName": "Mike Brown",
+      "email": "mike.brown@example.com",
+      "isAdmin": false
+    },
+    {
+      "id": 6,
+      "fullName": "Emily Davis",
+      "email": "emily.davis@example.com",
+      "isAdmin": false
+    },
+    {
+      "email": "dfrance@gmail.com",
+      "fullName": "Don France",
+      "isStaff": false,
+      "id": 7
+    }
+  ],
+  "amishVendors": [
+    {
+      "id": 1,
+      "fullName": "Sam Yoder",
+      "address": "101 Cross Rd, Ethridge, TN"
+    },
+    {
+      "id": 2,
+      "fullName": "Jacob Yoder",
+      "address": "300 Yoder Rd, Ethridge, TN"
+    },
+    {
+      "id": 3,
+      "fullName": "Daniel King",
+      "address": "151 McDowell Rd, Ethridge, TN"
+    },
+    {
+      "id": 4,
+      "fullName": "Mary Fisher",
+      "address": "202 Brooks Hughes, Ethridge, TN"
+    },
+    {
+      "id": 5,
+      "fullName": "Samuel Yoder",
+      "address": "W. Edan Rd, Ethridge, TN"
+    },
+    {
+      "id": 6,
+      "fullName": "Abram Miller",
+      "address": "312 Yoder Rd, Ethridge, TN"
+    },
+    {
+      "id": 7,
+      "fullName": "Eli Stoltzfus",
+      "address": "200 McDowell Rd, Ethridge, TN"
+    },
+    {
+      "id": 8,
+      "fullName": "Noah Lapp",
+      "address": "301 Brooks Hughes Rd, Ethridge, TN"
+    },
+    {
+      "id": 9,
+      "fullName": "Abraham Beiler",
+      "address": "501 Buffalo Rd, Ethridge, TN"
+    },
+    {
+      "id": 10,
+      "fullName": "Caleb Hostetler",
+      "address": "213 Sawmill Rd, Ethridge, TN"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "name": "Squash varieties ",
+      "imageUrl": "https://www.tasteofhome.com/wp-content/uploads/2019/06/squash-summer-on-display-farmers-market-shutterstock_156681845.jpg?resize=700,700",
+      "seasonsId": 2,
+      "categoriesId": 1,
+      "amishVendorsId": 1,
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "name": "Fresh Baked Bread",
+      "imageUrl": "https://d169bp7fx2b8qn.cloudfront.net/uploads/2014/11/Amish-Country-Loaf-1-1024x678.jpg",
+      "seasonsId": 4,
+      "categoriesId": 3,
+      "amishVendorsId": 4,
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "name": "Poly Furniture",
+      "imageUrl": "https://example.com/furniture.jpg",
+      "seasonsId": 4,
+      "categoriesId": 2,
+      "amishVendorsId": 1,
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "name": "Cedar lumber",
+      "imageUrl": "https://example.com/produce.jpg",
+      "seasonsId": 4,
+      "categoriesId": 5,
+      "amishVendorsId": 5,
+      "userId": 2
+    },
+    {
+      "id": 5,
+      "name": "Tomatoes and watermelons",
+      "imageUrl": "https://example.com/jams.jpg",
+      "seasonsId": 2,
+      "categoriesId": 1,
+      "amishVendorsId": 3,
+      "userId": 1
+    },
+    {
+      "id": 6,
+      "name": "Cabbages and lettuce",
+      "imageUrl": "https://example.com/baskets.jpg",
+      "seasonsId": 1,
+      "categoriesId": 1,
+      "amishVendorsId": 6,
+      "userId": 2
+    },
+    {
+      "id": 7,
+      "name": "Sweet potatoes",
+      "imageUrl": "https://example.com/flowers.jpg",
+      "seasonsId": 3,
+      "categoriesId": 1,
+      "amishVendorsId": 9,
+      "userId": 1
+    },
+    {
+      "id": 8,
+      "name": "Cantaloupes and corn",
+      "imageUrl": "https://example.com/candles.jpg",
+      "seasonsId": 2,
+      "categoriesId": 1,
+      "amishVendorsId": 7,
+      "userId": 2
+    },
+    {
+      "id": 9,
+      "name": "Bread and candies",
+      "imageUrl": "https://example.com/eggs.jpg",
+      "seasonsId": 4,
+      "categoriesId": 3,
+      "amishVendorsId": 8,
+      "userId": 1
+    },
+    {
+      "id": 10,
+      "name": "Handmade Soap",
+      "imageUrl": "https://example.com/soap.jpg",
+      "seasonsId": 2,
+      "categoriesId": 4,
+      "amishVendorsId": 10,
+      "userId": 2
+    },
+    {
+      "id": 11,
+      "name": "Strawberries",
+      "imageUrl": "https://example.com/soap.jpg",
+      "seasonsId": 1,
+      "categoriesId": 1,
+      "amishVendorsId": 10,
+      "userId": 2
+    },
+    {
+      "id": 12,
+      "name": "Bedroom furniture",
+      "imageUrl": "https://example.com/soap.jpg",
+      "seasonsId": 4,
+      "categoriesId": 2,
+      "amishVendorsId": 3,
+      "userId": 2
+    },
+    {
+      "id": 13,
+      "name": "Corn and potatoes",
+      "imageUrl": "https://example.com/soap.jpg",
+      "seasonsId": 2,
+      "categoriesId": 1,
+      "amishVendorsId": 1,
+      "userId": 2
+    },
+    {
+      "id": 14,
+      "name": "Tomatoes, onions and squash",
+      "imageUrl": "https://example.com/soap.jpg",
+      "seasonsId": 2,
+      "categoriesId": 1,
+      "amishVendorsId": 4,
+      "userId": 2
+    }
+  ],
+  "seasons": [
+    {
+      "id": 1,
+      "name": "Spring"
+    },
+    {
+      "id": 2,
+      "name": "Summer"
+    },
+    {
+      "id": 3,
+      "name": "Fall"
+    },
+    {
+      "id": 4,
+      "name": "Year-round"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Fruits and vegetables"
+    },
+    {
+      "id": 2,
+      "name": "Furniture"
+    },
+    {
+      "id": 3,
+      "name": "Baked and canned goods"
+    },
+    {
+      "id": 4,
+      "name": "Handmade Crafts"
+    },
+    {
+      "id": 5,
+      "name": "Custom lumber"
+    }
+  ]
+}
