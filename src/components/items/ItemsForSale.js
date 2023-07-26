@@ -15,19 +15,20 @@ export const ItemsForSale = () => {
             })
     }, [])
 
-    return <div className="item-container">
+    return <><div className="item-container" key={`item`}>
         {items.map((item) => {
             return (
-                <div key={item.id} className="item-card">
+                <><div key={item.id} className="item-card">
                     <img
                         src={item.imageUrl}
                         alt={item.name}
                         className="item-img"
-                        onClick={() => navigate(`/items/${item.id}`)}
-                    />
+                        onClick={() => navigate(`/items/${item.id}`)} />
                     <div>{item.name}</div>
-                </div>
+                </div></>
             )
         })}
     </div>
+        <h3>Please feel free to add an Amish vendor we may have overlooked!</h3>
+        <button onClick={() => navigate(`/new`)}>New Vendor</button></>
 }
