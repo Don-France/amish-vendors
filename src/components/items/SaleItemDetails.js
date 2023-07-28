@@ -31,7 +31,7 @@ export const SaleItemDetails = () => {
             method: "DELETE",
         })
             .then(
-                navigate("/")
+                navigate("/items")
             )
 
     }

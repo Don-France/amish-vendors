@@ -2,10 +2,17 @@ import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import "./items.css"
 
+const getLoggedInUserId = () => {
+    const localAmishUser = localStorage.getItem("amish_user");
+    const amishUserObject = JSON.parse(localAmishUser);
+
+    return amishUserObject.id
+}
 
 export const ItemsForSale = () => {
     const [items, setItems] = useState([])
     const navigate = useNavigate()
+    const loggedInUserId = getLoggedInUserId()
 
     useEffect(() => {
         fetch('http://localhost:8088/items')
@@ -24,7 +31,11 @@ export const ItemsForSale = () => {
             </div>
             <div className="item-container">
                 {items.map((item) => (
-                    <div key={item.id} className="item-card" onClick={() => navigate(`/items/${item.id}`)}>
+                    <div
+                        key={item.id}
+                        className={`item-card ${item.userId === loggedInUserId ? "highlight" : ""}`}
+                        // className="item-card" 
+                        onClick={() => navigate(`/items/${item.id}`)}>
                         <img
                             src={item.imageUrl}
                             alt={item.name}
