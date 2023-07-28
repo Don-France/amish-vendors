@@ -5,9 +5,34 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: blanchedalmond;
+  /* background-image: url(https://media.istockphoto.com/id/1374718551/photo/amish-buggy-and-morning-fog.webp?b=1&s=612x612&w=0&k=20&c=bGpyYRQ6HBOeiyb8BjOf2Pg36tF4-bTbOvXbC7svVDw=);
+  background-size: cover; */
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+} */
+select {
+  width: 200px;
+        height: 30px;
+        border: 1px solid #999;
+        font-size: 18px;
+        color: #1f1603;
+        background-color: #7a757559;
+        border-radius: 5px;
+        box-shadow: 4px 4px #ccc;
 }
