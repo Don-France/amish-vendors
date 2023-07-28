@@ -63,7 +63,7 @@ export const CategoriesSearch = () => {
 
     return (
         <div>
-            {/* Dropdown to select a season */}
+            {/* Dropdown to select a category */}
             <select onChange={handleCategorieselect}>
                 <option value="">Select a category</option>
                 {categories.map((category) => (
@@ -73,7 +73,7 @@ export const CategoriesSearch = () => {
                 ))}
             </select>
 
-            {/* Display items for the selected season */}
+            {/* Display items for the selected category */}
             {selectedCategories && (
                 <div>
                     <h2>Items available for {selectedCategories.id}</h2>

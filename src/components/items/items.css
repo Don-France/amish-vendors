@@ -68,6 +68,10 @@ body {
     font-size: x-large;
   }
 
+  .item-card.highlight {
+    border: 2px solid orange; 
+    box-shadow: 0 0 5px orange;
+  }
  
   
   /* #filter-bar {
