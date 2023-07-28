@@ -40,7 +40,9 @@ export const SaleItemDetails = () => {
 
     if (!item) { return null }
     return (
+
         <>
+
             <div key={item.id} className="item-card">
                 <img
                     src={item.imageUrl}
