@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import "./items.css"
+// import 'bulma/css/bulma.min.css';
 
 const getLoggedInUserId = () => {
     const localAmishUser = localStorage.getItem("amish_user");
@@ -24,7 +25,7 @@ export const ItemsForSale = () => {
 
     return (
         <>
-            <h1>Feast your eyes on this wonderful selection of homegrown produce, handmade crafts, and furniture</h1>
+            <h2>Feast your eyes on this wonderful selection of homegrown produce, handmade crafts, and furniture</h2>
             <div className="button-container">
                 <button onClick={() => navigate(`/seasons`)}>Search by season availability</button>
                 <button onClick={() => navigate(`/category`)}>Search by item category</button>
@@ -34,7 +35,7 @@ export const ItemsForSale = () => {
                     <div
                         key={item.id}
                         className={`item-card ${item.userId === loggedInUserId ? "highlight" : ""}`}
-                        // className="item-card" 
+                        // className="item-card"
                         onClick={() => navigate(`/items/${item.id}`)}>
                         <img
                             src={item.imageUrl}
@@ -50,4 +51,5 @@ export const ItemsForSale = () => {
         </>
     )
 };
+
 

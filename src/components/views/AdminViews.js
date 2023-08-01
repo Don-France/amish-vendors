@@ -13,7 +13,7 @@ export const AdminViews = () => {
         <Routes>
             <Route path="/" element={
                 <>
-                    <h1>Amish Vendors</h1>
+                    <h1>Zeke and Mose Amish Depot</h1>
                     <div>Find all that the Amish of Ethridge have to offer!</div>
 
                     <Outlet />

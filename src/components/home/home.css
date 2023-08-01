@@ -14,3 +14,11 @@
    width: 143px  ;
    height: 143px;
 }
+.home-amish-article {
+    display: flex; 
+    flex-direction: column; 
+    background-color: rgb(238, 179, 116);
+    border-radius: 10px;
+    font-family: cursive;
+  }
+  

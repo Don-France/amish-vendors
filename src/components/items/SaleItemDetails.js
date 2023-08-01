@@ -67,10 +67,10 @@ export const SaleItemDetails = () => {
                 const amishUserObject = JSON.parse(localAmishUser);
 
                 return amishUserObject.id === item.userId ? (
-                    <>
+                    <><h6>Feel free to edit or delete the items you have added!</h6><>
                         <button onClick={() => navigate(`/items/${item.id}/edit`)}>Edit</button>
                         <button onClick={() => handleDelete()}>Delete</button>
-                    </>
+                    </></>
                 ) : null;
             })()}
         </>
