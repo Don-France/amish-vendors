@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    background-color: brown;
+    background-color: rgb(200, 94, 41);
     border-radius: 1rem;
     padding: 1rem;
     box-shadow: 1px 3px 4px grey;
@@ -23,8 +23,8 @@
   
   .navbar__link {
     text-decoration: none;
-    color: black;
-    font-family: monospace;
+    color: blanchedalmond;
+    font-family: fantasy;
     font-size: 1.25rem;
   }
   

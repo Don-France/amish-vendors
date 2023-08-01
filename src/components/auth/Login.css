@@ -54,3 +54,8 @@ fieldset {
     background-blend-mode: overlay;
     background-repeat: no-repeat;
 }
+.login-submit {
+    border-radius: 10px;
+    background-color: rgb(118, 85, 42);
+    color: blanchedalmond;
+}

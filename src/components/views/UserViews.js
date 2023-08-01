@@ -10,25 +10,32 @@ import { CategoriesSearch } from "../categories/CategoriesSearch.js"
 
 export const UserViews = () => {
     return (
-        <Routes>
-            <Route path="/" element={
-                <>
-                    <h1>Zeke and Mose Amish Depot</h1>
-                    <div>Do the Amish differently!</div>
+        <div>
+            <Routes>
+                <Route path="/" element={
+                    <>
+                        <div className="user-header" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                            <h1>Zeke and Mose Amish Depot</h1>
+                            <h2>Do the Amish differently!</h2>
+                        </div>
+                        <Outlet />
+                    </>
+                }>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="items" element={<ItemsForSale />} />
+                    <Route path="/seasons" element={<SeasonsSearch />} />
+                    <Route path="/category" element={<CategoriesSearch />} />
+                    <Route path="amish" element={<AboutAmish />} />
+                    <Route path="items/:itemId" element={<SaleItemDetails />} />
+                    <Route path="new" element={<NewVendorProductForm />} />
+                    <Route path="items/:itemId/edit" element={<EditItems />} />
 
-                    <Outlet />
-                </>
-            }>
-                <Route path="/" element={<HomePage />} />
-                <Route path="items" element={<ItemsForSale />} />
-                <Route path="/seasons" element={<SeasonsSearch />} />
-                <Route path="/category" element={<CategoriesSearch />} />
-                <Route path="amish" element={<AboutAmish />} />
-                <Route path="items/:itemId" element={<SaleItemDetails />} />
-                <Route path="new" element={<NewVendorProductForm />} />
-                <Route path="items/:itemId/edit" element={<EditItems />} />
-
-            </Route>
-        </Routes>
+                </Route>
+            </Routes>
+            <footer>
+                {/* Add your footer content here */}
+                <p>Copyright © {new Date().getFullYear()} Zeke and Mose Amish Depot. All rights reserved.</p>
+            </footer>
+        </div>
     )
 }

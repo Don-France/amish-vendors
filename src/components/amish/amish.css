@@ -1,0 +1,107 @@
+
+
+/* Style the article container */
+
+.amish-article {
+   display: flex;
+   justify-content: space-between;
+    }
+  
+  /* Style the article title */
+  .article-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the article image */
+  .amish-article-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+  }
+  
+  /* Style the video container */
+  .App {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the video title */
+  .App h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the article meta data */
+  .article-meta {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the article content paragraphs */
+  .article-content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  /* Style the article author */
+  .article-author {
+    font-weight: bold;
+  }
+  
+  /* Style the article date */
+  .article-date {
+    margin-left: 10px;
+  }
+  
+  /* Style the YouTube video container */
+  .video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive videos */
+    position: relative;
+    margin-top: -10px;
+  }
+  
+  /* Style the YouTube video iframe */
+  .video-responsive iframe {
+    position: absolute;
+    top: -10px;
+    left: 13rem;
+    width: calc(100% - 25rem);
+    height: 70%;
+  }
+  
+  .sidebar-left {
+    flex: 0 0 20%; /* Set the width of the left sidebar */
+    background-color: rgb(118, 85, 42); /* Change the background color as desired */
+    color: #f0f0f0;
+    padding: 10px;
+    border-radius: 30px;
+    /* height: 350px; Set a fixed height for the sidebar */
+    overflow: auto; /* Add scrollbar when content exceeds the fixed height */
+    margin-top: 6.5rem;
+  }
+  /* .sidebar-right {
+    flex: 0 0 15%; Set the width of the right sidebar
+    background-color: #f0f0f0; Change the background color as desired
+    padding: 10px;
+    border-radius: 30px;
+  } */
+  .main-content {
+    flex: 1; /* Allow the main content area to take remaining space */
+    padding: .5rem;
+  }
+  .home-image-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2px;
+    margin: 40px;
+ }
+  
