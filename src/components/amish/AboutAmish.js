@@ -6,6 +6,7 @@ import { YoutubeEmbed } from "./YoutubeEmbed.js";
 
 export const AboutAmish = () => {
     return (
+
         <article className="amish-article">
             <div className="sidebar-left">
                 <h3>Jerry's Wagon Tours</h3>

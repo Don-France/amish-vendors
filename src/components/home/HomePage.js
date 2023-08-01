@@ -31,7 +31,7 @@ export const HomePage = () => {
             <div>
                 <Weather />
             </div>
-            <h1>Welcome to Zeke and Mose!</h1>
+            <h1 className="home-h1">Welcome to Zeke and Mose!</h1>
             <div className="home-image-div">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLGKGVqIbuPfOmhG1gvVn74e36Ta2I4hZ8hA&usqp=CAU" alt="amish men standing" className="amish-men-img" />
                 <img src="https://clipart-library.com/images/rTnKpbo6c.jpg" alt="Amish horse and buggy" className="amish-img" onMouseOver={playSoundOnHover} onMouseOut={stopSoundOnMouseOut} />

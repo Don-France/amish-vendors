@@ -14,7 +14,7 @@ export const UserViews = () => {
             <Routes>
                 <Route path="/" element={
                     <>
-                        <div className="user-header" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <div className="user-header" style={{ display: 'flex', flexDirection: 'column', alignItems: 'start' }}>
                             <h1>Zeke and Mose Amish Depot</h1>
                             <h2>Do the Amish differently!</h2>
                         </div>

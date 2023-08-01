@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom"
 import "./Login.css"
-
+import logo from '../asset/logo.jpeg'
 export const Login = () => {
     const [email, set] = useState("")
     const navigate = useNavigate()
@@ -29,7 +29,7 @@ export const Login = () => {
     }
 
     return (
-        <main className="container--login">
+        <><main className="container--login">
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
                     <h1>Zeke and Mose Amish Depot</h1>
@@ -54,5 +54,9 @@ export const Login = () => {
                 <Link to="/register">Not a member yet?</Link>
             </section>
         </main>
+            <div className="login-logo">
+                <img src={logo} alt="amish logo" className="amish-image-logo" />
+
+            </div></>
     )
 }

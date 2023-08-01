@@ -25,6 +25,9 @@ export const ItemsForSale = () => {
 
     return (
         <>
+            <div className="items-header">
+                <h1>Items currently being offered</h1>
+            </div>
             <h2>Feast your eyes on this wonderful selection of homegrown produce, handmade crafts, and furniture</h2>
             <div className="button-container">
                 <button onClick={() => navigate(`/seasons`)}>Search by season availability</button>
