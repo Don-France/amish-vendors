@@ -46,6 +46,7 @@ export const NewVendorProductForm = ({
 
     }, [])
 
+
     const handleAddVendor = async (evt) => {
         evt.preventDefault();
         if (

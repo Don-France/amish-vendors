@@ -1,14 +1,17 @@
 import { Link, useNavigate } from "react-router-dom"
 import "./NavBar.css"
-
+import logo from '../asset/logo.jpeg'
 export const UserNav = () => {
     const navigate = useNavigate()
 
     return (
         <ul className="navbar">
-            <li className="navbar__item active">
+            <Link className="logo__link navbar__link" to="/">
+                <img className="logo__img" src={logo} alt="Amish Logo" />
+            </Link>
+            {/* <li className="navbar__item active">
                 <Link className="navbar__link" to="/">Home</Link>
-            </li>
+            </li> */}
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/amish">About the Amish</Link>
             </li>

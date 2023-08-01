@@ -59,3 +59,13 @@ fieldset {
     background-color: rgb(118, 85, 42);
     color: blanchedalmond;
 }
+.amish-image-logo {
+    mix-blend-mode: multiply;
+    width: 200px; /* Set the desired width for the logo image */
+    height: 200px; 
+}
+.login-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

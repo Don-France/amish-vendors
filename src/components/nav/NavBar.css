@@ -7,6 +7,7 @@
     border-radius: 1rem;
     padding: 1rem;
     box-shadow: 1px 3px 4px grey;
+    height: 2rem;
   
   }
   
@@ -32,3 +33,15 @@
     text-decoration: underline;
   }
   
+  .logo__link {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo__img {
+    width: 50px; /* Set the desired width for the logo image */
+    height: 50px; /* Set the desired height for the logo image */
+    object-fit: contain; /* This will make the image fit inside the dimensions */
+    margin-right: 10px; /* Adjust this to add some space between the logo and the link text */
+    mix-blend-mode: multiply;
+  }
