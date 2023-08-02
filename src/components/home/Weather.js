@@ -16,7 +16,7 @@ export const Weather = () => {
                 return response.json();
             })
             .then((data) => {
-                console.log(data); // Log the parsed JSON data to check its structure
+
                 const intervalData = data?.data?.timelines[0]?.intervals[0];
                 if (intervalData) {
                     const temperature = intervalData?.values?.temperature;

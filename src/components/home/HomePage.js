@@ -2,6 +2,7 @@ import "./home.css"
 import amishHorseAndBuggySound from "./amishhorseandbuggy.wav"
 import { useRef, useState } from "react";
 import { Weather } from "./Weather.js";
+import { Maps } from "./Maps.js";
 
 export const HomePage = () => {
     const audioRef = useRef(null);
@@ -28,8 +29,9 @@ export const HomePage = () => {
 
     return (
         <div>
-            <div>
+            <div className="external-api">
                 <Weather />
+
             </div>
             <h1 className="home-h1">Welcome to Zeke and Mose!</h1>
             <div className="home-image-div">
@@ -69,17 +71,10 @@ export const HomePage = () => {
                     <li>Don't offer to show them a picture unless it is hand drawn.</li>
                     <li>Don't disturb them on Sunday, that is their day of worship and rest.</li>
                 </ul>
+                <Maps googleMapsApiKey={process.env.REACT_APP_GOOGLE_API_KEY} />
             </div>
+
         </div>
     );
-
-
-
-
-
-
-
-
-
 
 };
