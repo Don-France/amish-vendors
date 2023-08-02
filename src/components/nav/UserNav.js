@@ -18,9 +18,7 @@ export const UserNav = () => {
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/items">Current Sale Items</Link>
             </li>
-            <li className="navbar__item active">
-                <Link target={"_blank"} className="navbar__link" to="https://www.google.com/maps/@35.3619131,-87.315503,15.39z?entry=ttu">Map of the Area</Link>
-            </li>
+
 
             {
                 localStorage.getItem("amish_user")
