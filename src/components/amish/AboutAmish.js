@@ -57,8 +57,8 @@ export const AboutAmish = () => {
                     <img src="https://clipart-library.com/images/rTnKpbo6c.jpg" alt="Amish horse and buggy" className="amish-img" />
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLGKGVqIbuPfOmhG1gvVn74e36Ta2I4hZ8hA&usqp=CAU" alt="amish men standing" className="amish-men-img" />
                 </div>
+                <h2>Amish Lifestyle and Traditions</h2>
                 <div className="article-content">
-                    <h2>Amish Lifestyle and Traditions</h2>
                     <p>
                         The Amish are a fascinating and unique community known for their
                         traditional way of life and rejection of modern technologies. With a
@@ -101,6 +101,8 @@ export const AboutAmish = () => {
                         simplicity, faith, and family serves as a reminder of the importance
                         of preserving cultural heritage in an ever-changing world.
                     </p>
+                </div>
+                <div className="key-features-container">
                     <h2>Key Features of Amish Lifestyle</h2>
                     <ul>
                         <li>Horse-drawn buggies for transportation</li>
@@ -108,8 +110,9 @@ export const AboutAmish = () => {
                         <li>Simple living without modern technology</li>
                         <li>Fresh home grown vegetables, baked and canned goods </li>
                     </ul>
-
                 </div>
+
+
             </div>
             {/* <div className="sidebar-right">Sidebar Right Content</div> */}
         </article>

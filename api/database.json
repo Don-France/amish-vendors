@@ -109,7 +109,7 @@
     {
       "id": 4,
       "name": "Cedar lumber",
-      "imageUrl": "https://example.com/produce.jpg",
+      "imageUrl": "https://media.istockphoto.com/id/523737383/photo/isolated-2x4-wood-boards.jpg?b=1&s=612x612&w=0&k=20&c=1YuOW4pTTNYIAZ8bM28UiSZXAWpQV3UL8q1MZj-gJSc=",
       "seasonsId": 4,
       "categoriesId": 5,
       "amishVendorsId": 5,
@@ -117,7 +117,7 @@
     },
     {
       "name": "Tomatoes and watermelon",
-      "imageUrl": "https://example.com/jams.jpg",
+      "imageUrl": "https://images.pexels.com/photos/3938343/pexels-photo-3938343.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "seasonsId": 2,
       "categoriesId": 1,
       "amishVendorsId": 3,
@@ -127,7 +127,7 @@
     {
       "id": 6,
       "name": "Cabbages and lettuce",
-      "imageUrl": "https://example.com/baskets.jpg",
+      "imageUrl": "https://images.pexels.com/photos/6316537/pexels-photo-6316537.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "seasonsId": 1,
       "categoriesId": 1,
       "amishVendorsId": 6,

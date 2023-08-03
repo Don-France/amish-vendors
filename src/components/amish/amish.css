@@ -44,9 +44,12 @@
   }
   
   /* Style the article content paragraphs */
-  .article-content p {
-    margin-bottom: 20px;
-    line-height: 1.6;
+  .article-content  {
+    display: flex; 
+    flex-direction: column; 
+    background-color: rgb(238, 179, 116);
+    
+    font-family: cursive;
   }
   
   /* Style the article author */
@@ -85,13 +88,10 @@
     /* height: 350px; Set a fixed height for the sidebar */
     overflow: auto; /* Add scrollbar when content exceeds the fixed height */
     margin-top: 6.5rem;
+    margin-bottom: 12.5rem;
+    height: 1600px;
   }
-  /* .sidebar-right {
-    flex: 0 0 15%; Set the width of the right sidebar
-    background-color: #f0f0f0; Change the background color as desired
-    padding: 10px;
-    border-radius: 30px;
-  } */
+  
   .main-content {
     flex: 1; /* Allow the main content area to take remaining space */
     padding: .5rem;
@@ -102,6 +102,12 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 2px;
-    margin: 40px;
+    margin-top: -50px;
  }
-  
+  .key-features-container {
+    text-align: center;
+   
+  }
+  .key-features-container ul {
+    display: inline-block;
+  }

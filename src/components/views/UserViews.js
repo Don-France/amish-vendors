@@ -8,6 +8,7 @@ import { HomePage } from "../home/HomePage.js"
 import { SeasonsSearch } from "../seasons/SeasonsSearch.js"
 import { CategoriesSearch } from "../categories/CategoriesSearch.js"
 
+
 export const UserViews = () => {
     return (
         <div>
