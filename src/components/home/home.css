@@ -5,6 +5,9 @@
    align-items: center;
    padding: 2px;
    margin: 40px;
+   
+   
+  
 }
 .amish-img {
     mix-blend-mode: multiply;
@@ -20,29 +23,69 @@
     background-color: rgb(238, 179, 116);
     border-radius: 10px;
     font-family: cursive;
+    padding: 20px;
   }
   .home-h1 {
     text-align: center;
     font-family: cursive ;
     margin-top: 0;
+    margin-bottom: 40px;
   }
-  /* .map-app {
-    height: 75vh;
-    width: 75vw;
-  } */
-  
-  /* .map-container {
-    height: 25%;
-    width: 25%;
-  } */
-  .external-api {
-    display: grid;
-    grid-template-columns: auto auto; /* Two columns with equal width */
-    align-items: stretch; /* Center vertically */
-    gap: 20px; /* Add some spacing between components */
-  }
-  /* .map-api {
+ 
+  .weather-container {
+    position: absolute;
+    top: 10px;
+    right:20px;
     display: flex;
-    flex-direction: row; 
+    flex-direction: column;
+    width: 15rem;
+    height: 15rem;
+    justify-content: center;
+    border-radius: 50%;
+    text-align: center;
+    
+    margin-top: -100px; 
+   
+    @media (max-width: 768px) {
+     
+      top: 10px;
+      right: 10px;
   }
-   */
+  }
+  
+.additional-info {
+  text-align: center;
+}
+.additional-info ul {
+  display: inline-block;
+}
+
+.carousel-container img {
+  max-height: 400px; 
+}
+
+.home-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.carousel-with-content-container {
+  display: flex;
+  align-items: stretch; /* Align children boxes with the same height */
+  justify-content: center; /* Center the content and carousel */
+  gap: 20px; /* Adjust the gap between content and carousel as needed */
+}
+
+.content-box {
+  flex: 1; /* Each content box takes equal space */
+  /* Add styles for the content box, e.g., background, padding, etc. */
+  padding: 5px;
+  background-color: rgb(255, 248, 224);
+  border-radius: 10px;
+}
+
+.carousel-container {
+  flex: 1; /* The carousel takes equal space to content boxes */
+  /* Add styles for the carousel container if necessary */
+}

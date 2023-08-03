@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { WiDaySunny, WiDayCloudy, WiDayRain, WiDayRainMix, WiDaySunnyOvercast } from 'react-icons/wi';
+import { WiDaySunny, WiDayCloudy, WiDayRain, WiDayRainMix, WiDaySunnyOvercast, WiDaySprinkle } from 'react-icons/wi';
 export const Weather = () => {
     const [weatherData, setWeatherData] = useState(null);
     const apiKey = 'GClLxl44NAiuJluXfF1FyeN40bzXSFK3';
@@ -41,6 +41,21 @@ export const Weather = () => {
         4201: WiDayRain,
         1000: WiDaySunny,
         1001: WiDayCloudy,
+        4000: WiDaySprinkle,
+        // Add more weather codes and their descriptions here...
+    };
+    const weatherCodeToColor = {
+        1100: '#FFFF00', // Sunny - Yellow background
+        1101: '#87CEEB', // Cloudy - Light Blue background
+        1102: '#87CEEB', // Mostly Cloudy - Light Blue background
+        1103: '#B0C4DE', // Partly Cloudy - Light Steel Blue background
+        1001: '#87CEEB', // Cloudy - Light Blue background
+        4001: '#ADD8E6', // Rain - Light Blue background
+        4200: '#ADD8E6', // Mixed Rain and Snow - Light Blue background
+        4201: '#ADD8E6', // Mixed Rain and Sleet - Light Blue background
+        1000: '#FFFF00', // Clear - Yellow background
+        1001: '#87CEEB', // Cloudy - Light Blue background
+        4000: '#00CED1', // Drizzle - Dark Turquoise background
         // Add more weather codes and their descriptions here...
     };
 
@@ -49,9 +64,10 @@ export const Weather = () => {
     }
 
     const { temperature, weatherCode } = weatherData;
+    const backgroundColor = weatherCodeToColor[weatherCode] || '#FFFFFF';
 
     return (
-        <div>
+        <div className="weather-container" style={{ backgroundColor }}>
             <h3>Current Weather</h3>
             <p>Temperature: {temperature}°F</p>
             <div style={{ fontSize: '4em' }}>
