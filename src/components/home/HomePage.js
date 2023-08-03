@@ -4,7 +4,10 @@ import { useRef, useState } from "react";
 import { Weather } from "./Weather.js";
 import { Maps } from "./Maps.js";
 
+
 export const HomePage = () => {
+
+
     const audioRef = useRef(null);
     const [audioLoaded, setAudioLoaded] = useState(false);
     const playSoundOnHover = () => {
@@ -28,7 +31,7 @@ export const HomePage = () => {
 
 
     return (
-        <div>
+        <div >
             <div className="external-api">
                 <Weather />
 
@@ -73,6 +76,7 @@ export const HomePage = () => {
                 </ul>
                 <Maps googleMapsApiKey={process.env.REACT_APP_GOOGLE_API_KEY} />
             </div>
+
 
         </div>
     );
