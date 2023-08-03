@@ -9,9 +9,6 @@ export const UserNav = () => {
             <Link className="logo__link navbar__link" to="/">
                 <img className="logo__img" src={logo} alt="Amish Logo" />
             </Link>
-            {/* <li className="navbar__item active">
-                <Link className="navbar__link" to="/">Home</Link>
-            </li> */}
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/amish">About the Amish</Link>
             </li>
