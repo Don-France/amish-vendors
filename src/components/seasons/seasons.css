@@ -1,0 +1,38 @@
+
+/* CSS for item rows */
+.item-rows-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.seasons-item-container {
+    width: 200px; 
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.seasons-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.seasons-item-img {
+    width: 100%;
+    height: auto;
+}
+
+.seasons-item-info {
+    margin-top: 5px;
+    text-align: center; 
+}
+
+.seasons-item-name {
+    font-weight: bold;
+}
+
+.seasons-vendor-info {
+    color: #171313;
+    font-size: 12px;
+}

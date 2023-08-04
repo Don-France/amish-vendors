@@ -33,8 +33,8 @@ export const UserViews = () => {
 
                 </Route>
             </Routes>
-            <footer>
-                {/* Add your footer content here */}
+            <footer >
+
                 <p>Copyright © {new Date().getFullYear()} Zeke and Mose Amish Depot. All rights reserved.</p>
             </footer>
         </div>

@@ -31,7 +31,7 @@ export const ItemsForSale = () => {
             <h2>Feast your eyes on this wonderful selection of homegrown produce, handmade crafts, and furniture</h2>
             <div className="button-container">
                 <button onClick={() => navigate(`/seasons`)}>Search by season availability</button>
-                <button onClick={() => navigate(`/category`)}>Search by item category</button>
+                <button onClick={() => navigate(`/category`)}>Search by product category</button>
             </div>
             <div className="item-container">
                 {items.map((item) => (
@@ -52,6 +52,7 @@ export const ItemsForSale = () => {
             <h3>Please feel free to add an Amish vendor we may have overlooked!</h3>
             <button className="newVendor-button" onClick={() => navigate(`/new`)}>New Vendor</button>
         </>
+
     )
 };
 
