@@ -7,6 +7,7 @@
 
 
 import { useState, useEffect } from "react";
+import "./seasons.css"
 
 export const SeasonsSearch = () => {
     const [items, setItems] = useState([]);
@@ -72,32 +73,39 @@ export const SeasonsSearch = () => {
                     </option>
                 ))}
             </select>
-
             {/* Display items for the selected season */}
             {selectedSeason && (
-                <div>
-                    <h2>Items available in {selectedSeason.id}</h2>
-                    {filteredItems.length > 0 ? (
-                        filteredItems.map((item) => (
-                            <div key={item.id}>
-                                <img
-                                    src={item.imageUrl}
-                                    alt={item.name}
-                                    className="item-img"
-                                />
-                                <div>{item.name}</div>
-                                {/* Display vendor info */}
-                                <div>Sold by: {getVendorInfo(item.amishVendorsId)}</div>
-                            </div>
-                        ))
-                    ) : (
-                        <p>No items available for {selectedSeason}.</p>
-                    )}
+                <div className="seasons-items">
+                    <h2>Items available in {selectedSeason}!</h2>
+                    <div className="item-rows-container">
+                        {filteredItems.length > 0 ? (
+                            filteredItems.map((item) => (
+                                <div key={item.id} className="seasons-item-container">
+                                    <div className="seasons-image-container">
+                                        <img
+                                            src={item.imageUrl}
+                                            alt={item.name}
+                                            className="seasons-item-img"
+                                        />
+                                    </div>
+                                    <div className="seasons-item-info">
+                                        <div className="item-name">{item.name}</div>
+                                        {/* Display vendor info */}
+                                        <div className="seasons-vendor-info">Sold by: {getVendorInfo(item.amishVendorsId)}</div>
+                                    </div>
+                                </div>
+                            ))
+                        ) : (
+                            <p>No items available for {selectedSeason}.</p>
+                        )}
+                    </div>
                 </div>
             )}
+
         </div>
+
     );
-};
 
 
 
+}

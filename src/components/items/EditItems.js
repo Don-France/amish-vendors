@@ -264,12 +264,12 @@ export const EditItems = ({
                 </div>
             </fieldset>
             <button
-                className="btn"
+                className="edit-submit-button"
                 onClick={(event) => {
                     handleEditVendor(event)
                 }}
             >
-                Edit Vendor
+                Save Edit
             </button>
         </form>
     )

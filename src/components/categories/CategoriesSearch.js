@@ -7,7 +7,7 @@
 
 
 import { useState, useEffect } from "react";
-
+import "./category.css"
 export const CategoriesSearch = () => {
     const [items, setItems] = useState([]);
     const [categories, setCategories] = useState([]);
@@ -75,24 +75,30 @@ export const CategoriesSearch = () => {
 
             {/* Display items for the selected category */}
             {selectedCategories && (
-                <div>
-                    <h2>Items available for {selectedCategories.id}</h2>
-                    {filteredItems.length > 0 ? (
-                        filteredItems.map((item) => (
-                            <div key={item.id}>
-                                <img
-                                    src={item.imageUrl}
-                                    alt={item.name}
-                                    className="item-img"
-                                />
-                                <div>{item.name}</div>
-                                {/* Display vendor info */}
-                                <div>Sold by: {getVendorInfo(item.amishVendorsId)}</div>
-                            </div>
-                        ))
-                    ) : (
-                        <p>No items available for {selectedCategories}.</p>
-                    )}
+                <div className="category-items">
+                    <h2>Items available in {selectedCategories}!</h2>
+                    <div className="category-item-rows-container">
+                        {filteredItems.length > 0 ? (
+                            filteredItems.map((item) => (
+                                <div key={item.id} className="category-item-container">
+                                    <div className="category-image-container">
+                                        <img
+                                            src={item.imageUrl}
+                                            alt={item.name}
+                                            className="category-item-img"
+                                        />
+                                    </div>
+                                    <div className="category-item-info">
+                                        <div className="category-item-name">{item.name}</div>
+                                        {/* Display vendor info */}
+                                        <div className="category-vendor-info">Sold by: {getVendorInfo(item.amishVendorsId)}</div>
+                                    </div>
+                                </div>
+                            ))
+                        ) : (
+                            <p>No items available for {selectedCategories}.</p>
+                        )}
+                    </div>
                 </div>
             )}
         </div>

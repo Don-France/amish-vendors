@@ -1,6 +1,6 @@
 import "./amish.css"
 import { YoutubeEmbed } from "./YoutubeEmbed.js";
-
+import { Weather } from "../../components/home/Weather.js";
 
 
 
@@ -8,6 +8,7 @@ export const AboutAmish = () => {
     return (
 
         <article className="amish-article">
+
             <div className="sidebar-left">
                 <h3>Jerry's Wagon Tours</h3>
                 <p>Jerry's wagon tours taking tourist through Amish country.</p>

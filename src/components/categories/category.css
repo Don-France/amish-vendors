@@ -1,0 +1,38 @@
+
+/* CSS for item rows */
+.category-item-rows-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-item-container {
+    width: 200px; /* Adjust the width to fit your desired item size */
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.category-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.category-item-img {
+    width: 100%;
+    height: auto;
+}
+
+.category-item-info {
+    margin-top: 5px;
+    text-align: center; /* Optional: Center the text */
+}
+
+.category-item-name {
+    font-weight: bold;
+}
+
+.category-vendor-info {
+    color: #171313;
+    font-size: 12px;
+}

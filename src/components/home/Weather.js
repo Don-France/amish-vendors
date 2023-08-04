@@ -54,7 +54,7 @@ export const Weather = () => {
         4200: '#ADD8E6', // Mixed Rain and Snow - Light Blue background
         4201: '#ADD8E6', // Mixed Rain and Sleet - Light Blue background
         1000: '#FFFF00', // Clear - Yellow background
-        1001: '#87CEEB', // Cloudy - Light Blue background
+        1001: '#D3D3D3', // Cloudy - Light Blue background
         4000: '#00CED1', // Drizzle - Dark Turquoise background
         // Add more weather codes and their descriptions here...
     };
